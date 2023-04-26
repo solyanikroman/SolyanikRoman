@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R462</id>
+	<name>Test Run Solyanik Hardload</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-04-26T11:31:55Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>15</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Kaprilevskaya</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Петкун</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Барсук</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Solyanik</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T70245</id>
+				<title>File copying Solyanik</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл для копирования на рабочем столе  C:\Users\Руслан\Desktop &quot;123.docx&quot; с текстом на 1 кб. C:\Users\Роман\Downloads</preconds>
+										<steps_separated><step>
+<index>1</index><content>Добавить файл &quot;123.docx&quot; находящийся в папке C:\Users\Руслан\Desktop в приложение, нажав на кнопку &quot;Найти и Добавить файл в список&quot;,откроется окно выбора файлов,нужно выбрать нужный файл там и нажать кнопку &quot;выбрать&quot;</content><expected>В окне приложения в блоке Files отображается имя и путь до файла . Скриншот![](index.php?/attachments/get/4364)
+</expected></step>
+<step>
+<index>2</index><content>Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку,куда писать файл&quot; C:\Users\Руслан\Desktop\Новая папка</content><expected>В интерфейсе программы отображается путь до папки C:\Users\Руслан\Desktop\Новая папка</expected></step>
+<step>
+<index>3</index><content>Отметить файл кнопкой Check Box в интерфейсе программы</content><expected>В интерфейсе внутри Check Box будет отображаться галочка</expected></step>
+<step>
+<index>4</index><content>Нажать на кнопку Начать грузить</content><expected>Интерфейс блокируется. Становится доступной кнопка &quot;Пауза&quot; для нажатия. Check box исчезает.</expected></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Руслан\Desktop\Новая папка и проверить наличие файла 123.docx</content><expected>наличие файла 123.docx  в папке C:\Users\Руслан\Desktop\Новая папка</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4458</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:05Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Добавить файл &quot;123.docx&quot; находящийся в папке C:\Users\Руслан\Desktop в приложение, нажав на кнопку &quot;Найти и Добавить файл в список&quot;,откроется окно выбора файлов,нужно выбрать нужный файл там и нажать кнопку &quot;выбрать&quot;</content><expected>В окне приложения в блоке Files отображается имя и путь до файла . Скриншот![](index.php?/attachments/get/4364)
+</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку,куда писать файл&quot; C:\Users\Руслан\Desktop\Новая папка</content><expected>В интерфейсе программы отображается путь до папки C:\Users\Руслан\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Отметить файл кнопкой Check Box в интерфейсе программы</content><expected>В интерфейсе внутри Check Box будет отображаться галочка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Нажать на кнопку Начать грузить</content><expected>Интерфейс блокируется. Становится доступной кнопка &quot;Пауза&quot; для нажатия. Check box исчезает.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Руслан\Desktop\Новая папка и проверить наличие файла 123.docx</content><expected>наличие файла 123.docx  в папке C:\Users\Руслан\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70246</id>
+				<title>Копирование пустой папки</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаём пустую папку с названием &quot;Новая папка&quot;
+путь C:\Users\Admin\Desktop</preconds>
+										<steps_separated><step>
+<index>1</index><content>В открытой программе HardLoad.exe нажать на кнопку с символом &quot;...&quot; в левом верхнем углу</content><expected> высветится &quot;Найти и добавить файл в список&quot;,откроется окно для выбора файла</expected></step>
+<step>
+<index>2</index><content>в левом столбце окна для выбора файла выбираем &quot;Рабочий стол&quot;</content><expected>Откроется окно с файлами на рабочем столе</expected></step>
+<step>
+<index>3</index><content>на рабочем столе выбираем папку &quot;Новая папка&quot; и кликаем на неё</content><expected>Открывается &quot;Новая папка&quot;, внутри отсутствуют файлы</expected></step>
+<step>
+<index>4</index><content>в окне выбора файла пробуем нажать &quot;Открыть&quot; </content><expected>кнопка &quot;Открыть&quot; недоступна,т.к отсутствуют файла для копирования. Копирование папки не представляется возможным</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4767</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:11Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>В открытой программе HardLoad.exe нажать на кнопку с символом &quot;...&quot; в левом верхнем углу</content><expected> высветится &quot;Найти и добавить файл в список&quot;,откроется окно для выбора файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>в левом столбце окна для выбора файла выбираем &quot;Рабочий стол&quot;</content><expected>Откроется окно с файлами на рабочем столе</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>на рабочем столе выбираем папку &quot;Новая папка&quot; и кликаем на неё</content><expected>Открывается &quot;Новая папка&quot;, внутри отсутствуют файлы</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>в окне выбора файла пробуем нажать &quot;Открыть&quot; </content><expected>кнопка &quot;Открыть&quot; недоступна,т.к отсутствуют файла для копирования. Копирование папки не представляется возможным</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70247</id>
+				<title>;Копирование файла с названием на китайском языке</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл для копирования на рабочем столе C:\Users\Роман\Desktoр\異体字.txt с текстом на 1 кб</preconds>
+										<steps_separated><step>
+<index>1</index><content>Добавить файл &quot;異体字.txt &quot; находящийся в папке C:\Users\Роман\Desktop в приложение, нажав на кнопку &quot;Найти и Добавить файл в список&quot;,откроется окно выбора файлов,нужно выбрать нужный файл там и нажать кнопку &quot;выбрать&quot;</content><expected>В окне приложения в блоке Files отображается имя и путь до файла</expected></step>
+<step>
+<index>2</index><content>Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку,куда писать файл&quot; C:\Users\Роман\Desktop\Новая папка</content><expected>В интерфейсе программы отображается путь до папки C:\Users\Роман\Desktop\Новая папка</expected></step>
+<step>
+<index>3</index><content>Отметить файл кнопкой Check Box в интерфейсе программы</content><expected>В интерфейсе внутри Check Box будет отображаться галочка</expected></step>
+<step>
+<index>4</index><content>Нажать на кнопку Начать грузить</content><expected>Интерфейс блокируется. Становится доступной кнопка &quot;Пауза&quot; для нажатия. Check box исчезает.</expected></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Роман\Desktop\Новая папка и проверить наличие файла 異体字.txt </content><expected>наличие файла 異体字.txt  в папке C:\Users\Роман\Desktop\Новая папка</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4768</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:13Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Добавить файл &quot;異体字.txt &quot; находящийся в папке C:\Users\Роман\Desktop в приложение, нажав на кнопку &quot;Найти и Добавить файл в список&quot;,откроется окно выбора файлов,нужно выбрать нужный файл там и нажать кнопку &quot;выбрать&quot;</content><expected>В окне приложения в блоке Files отображается имя и путь до файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку,куда писать файл&quot; C:\Users\Роман\Desktop\Новая папка</content><expected>В интерфейсе программы отображается путь до папки C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Отметить файл кнопкой Check Box в интерфейсе программы</content><expected>В интерфейсе внутри Check Box будет отображаться галочка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Нажать на кнопку Начать грузить</content><expected>Интерфейс блокируется. Становится доступной кнопка &quot;Пауза&quot; для нажатия. Check box исчезает.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Роман\Desktop\Новая папка и проверить наличие файла 異体字.txt </content><expected>наличие файла 異体字.txt  в папке C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70248</id>
+				<title>Копирование нескольких файлов разных форматов одновременно</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Открыть программу &quot;Hardload.exe&quot;
+Создать файлы &quot;1.txt&quot;, &quot;newfile.doc&quot;, &quot;rrr.pdf&quot; по адресу C:\Users\Роман\Desktop
+Создать папку для копирования файлов &quot;Новая папка&quot;  по адресу C:\Users\Роман\Desktop\Новая папка
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл 1.txt из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected></step>
+<step>
+<index>2</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл newfile.doc из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected></step>
+<step>
+<index>3</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл rrr.pdf из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected></step>
+<step>
+<index>4</index><content>	
+Отметить все файлы расположенные в &quot;Files&quot; checkbox и нажать кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс блокируется, становится активной кнопка Пауза. В информационном поле отображается текст &quot;Остановить грузить&quot;. Пропадают checkbox</expected></step>
+<step>
+<index>5</index><content>Открываем папку C:\Users\Роман\Desktop\Новая папка и проверяем наличие файлов</content><expected>Файлы есть в папке C:\Users\Роман\Desktop\Новая папка</expected></step>
+<step>
+<index>6</index><content>Открываем файлы и проверяем работают ли они</content><expected>Файлы работают</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4769</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:17Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл 1.txt из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл newfile.doc из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файл rrr.pdf из папки</content><expected>Файл отображается в &quot;Files&quot;.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>	
+Отметить все файлы расположенные в &quot;Files&quot; checkbox и нажать кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс блокируется, становится активной кнопка Пауза. В информационном поле отображается текст &quot;Остановить грузить&quot;. Пропадают checkbox</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Открываем папку C:\Users\Роман\Desktop\Новая папка и проверяем наличие файлов</content><expected>Файлы есть в папке C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>6</index><content>Открываем файлы и проверяем работают ли они</content><expected>Файлы работают</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70249</id>
+				<title>Копирование файла скрытого</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание файла по адресу C:\Users\Роман\Desktop file.txt с текстом на 1kb.
+Создание папки для копирования по адресу C:\Users\Роман\Desktop\Новая папка
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл file.txt  C:\Users\Роман\Desktop
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Роман\Desktop\file.txt</expected></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку  C:\Users\Роман\Desktop\Новая папка
+</content><expected>-В интерфейсе программы отображается путь C:\Users\Роман\Desktop\Новая папка</expected></step>
+<step>
+<index>3</index><content>	
+-Выбрать файл с помощью checkbox в приложении</content><expected>появилась галочка в checkbox</expected></step>
+<step>
+<index>4</index><content>-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected></step>
+<step>
+<index>5</index><content>-Открыть папку  C:\Users\Роман\Desktop\Новая папка
+
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Роман\Desktop\Новая папка находится файл file.txt
+-Содержимое файла сохранено.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4770</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:22Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл file.txt  C:\Users\Роман\Desktop
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Роман\Desktop\file.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку  C:\Users\Роман\Desktop\Новая папка
+</content><expected>-В интерфейсе программы отображается путь C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>	
+-Выбрать файл с помощью checkbox в приложении</content><expected>появилась галочка в checkbox</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>-Открыть папку  C:\Users\Роман\Desktop\Новая папка
+
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Роман\Desktop\Новая папка находится файл file.txt
+-Содержимое файла сохранено.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70250</id>
+				<title>Удаление нескольких файлов из списка</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создать файлы &quot;1.txt&quot;, &quot;newfile.doc&quot;, &quot;rrr.pdf&quot; по адресу C:\Users\Роман\Desktop
+В приложении HardLoad C помощью кнопки &quot;Найти и добавить файл в список&quot; выбрать и добавить файлы в список &quot;1.txt&quot;, &quot;newfile.doc&quot;, &quot;rrr.pdf&quot; </preconds>
+										<steps_separated><step>
+<index>1</index><content>В разделе Files выбрать с помощью клика на  Checkbox файлы &quot;C:\Users\Роман\Desktop\1.txt&quot;, &quot;C:\Users\Роман\Desktop\newfile.doc&quot;, &quot;C:\Users\Роман\Desktop\rrr.pdf&quot; </content><expected>в Checkbox появились галочки</expected></step>
+<step>
+<index>2</index><content>В левом верхнем углу нажать на кнопку с красным крестиком - Удалить выделенные файлы из списка</content><expected>Выделенные файлы удалятся из списка. Список пуст</expected></step>
+<step>
+<index>3</index><content></content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4771</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:25Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>В разделе Files выбрать с помощью клика на  Checkbox файлы &quot;C:\Users\Роман\Desktop\1.txt&quot;, &quot;C:\Users\Роман\Desktop\newfile.doc&quot;, &quot;C:\Users\Роман\Desktop\rrr.pdf&quot; </content><expected>в Checkbox появились галочки</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В левом верхнем углу нажать на кнопку с красным крестиком - Удалить выделенные файлы из списка</content><expected>Выделенные файлы удалятся из списка. Список пуст</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content></content><expected></expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70251</id>
+				<title>Копирование архива</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем архив  по адресу C:\Users\Роман\Desktop\123.rar с файлами на 320 kb.
+Копируем в папку  C:\Users\Роман\Desktop\Новая папка</preconds>
+										<steps_separated><step>
+<index>1</index><content>	
+-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 123.rar в C:\Users\Роман\Desktop\123.rar
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Роман\Desktop\123.rar</expected></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку  C:\Users\Роман\Desktop\Новая папка</content><expected>-В интерфейсе программы отображается путь  C:\Users\Роман\Desktop\Новая папка</expected></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>checkbox отмечен галочкой</expected></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected></step>
+<step>
+<index>5</index><content>-Открыть папку C:\Users\Роман\Desktop\Новая папка
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Роман\Desktop\Новая папка находится файл 123.rar
+-Содержимое файла сохранено.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4772</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:27Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>	
+-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 123.rar в C:\Users\Роман\Desktop\123.rar
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Роман\Desktop\123.rar</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку  C:\Users\Роман\Desktop\Новая папка</content><expected>-В интерфейсе программы отображается путь  C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>checkbox отмечен галочкой</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>-Открыть папку C:\Users\Роман\Desktop\Новая папка
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Роман\Desktop\Новая папка находится файл 123.rar
+-Содержимое файла сохранено.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70252</id>
+				<title>Копирование файла размером более 100 мб</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл 1.txt для копирования C:\Users\Роман\Desktop, с текстом на 230 мб
+Копируем файл 1.txt в папку  C:\Users\Роман\Desktop\Новая папка</preconds>
+										<steps_separated><step>
+<index>1</index><content>
+Нажать на кнопку &quot;Найти и добавить файл в список&quot; в левом верхнем углу. Внизу в строке &quot;имя файла&quot; копируем и вставляем C:\Users\Роман\Desktop. Выбираем открывшийся файл с названием &quot;1.txt&quot; дважды быстро нажав на имя файла.</content><expected>В окне приложения в блоке файла отображается C:\Users\Роман\Desktop\1.txt</expected></step>
+<step>
+<index>2</index><content>	
+Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку, куда писать файл&quot; C:\Users\Роман\Desktop\Новая папка</content><expected>в интерфейсе программы отображается путь C:\Users\Роман\Desktop\Новая папка</expected></step>
+<step>
+<index>3</index><content>	
+Отметить чек-бокс добавленного файла</content><expected>чек-бокс выбран,появилась галочка</expected></step>
+<step>
+<index>4</index><content>
+Нажать кнопку &quot;Начать грузить&quot;</content><expected>Начинается копирование файла
+Интерфейс программы блокируется, становится активна только кнопка &quot;Остановить грузить&quot;</expected></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Роман\Desktop\Новая папка проверить скопировался ли файл 1.txt</content><expected>Файл 1.txt появился в папке C:\Users\Роман\Desktop\Новая папка
+Содержимое документа отображается, исходный размер скопировался в неизменном виде
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4773</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:31Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>
+Нажать на кнопку &quot;Найти и добавить файл в список&quot; в левом верхнем углу. Внизу в строке &quot;имя файла&quot; копируем и вставляем C:\Users\Роман\Desktop. Выбираем открывшийся файл с названием &quot;1.txt&quot; дважды быстро нажав на имя файла.</content><expected>В окне приложения в блоке файла отображается C:\Users\Роман\Desktop\1.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>	
+Добавить папку для копирования файла в приложении с помощью кнопки &quot;выбрать папку, куда писать файл&quot; C:\Users\Роман\Desktop\Новая папка</content><expected>в интерфейсе программы отображается путь C:\Users\Роман\Desktop\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>	
+Отметить чек-бокс добавленного файла</content><expected>чек-бокс выбран,появилась галочка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>
+Нажать кнопку &quot;Начать грузить&quot;</content><expected>Начинается копирование файла
+Интерфейс программы блокируется, становится активна только кнопка &quot;Остановить грузить&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Открыть папку C:\Users\Роман\Desktop\Новая папка проверить скопировался ли файл 1.txt</content><expected>Файл 1.txt появился в папке C:\Users\Роман\Desktop\Новая папка
+Содержимое документа отображается, исходный размер скопировался в неизменном виде
+
+</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70253</id>
+				<title>Копирование  текстового файла с текстом на английском языке</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1 файл размером 30 кб, в формате .txt с названием &quot;Homework&quot;.
+Копирование от C:\Users\Roman\Desktop\Homework.txt в
+C:\Users\Roman\Documents\hardload\Homework.txt</preconds>
+										<steps_separated><step>
+<index>1</index><content>Добавить файл с помощью кнопки &quot;Найти и добавить файл в список&quot; с названием &quot;HomeWork&quot; из папки: C:\Users\Roman\Desktop\Homework.txt</content><expected>Файл &quot;Homework&quot; добавлен</expected></step>
+<step>
+<index>2</index><content>	
+C помощью кнопки &quot;Выбрать папку, куда писать файлы&quot; выбрать папку, в которую копировать файл: C:\Users\Roman\Documents\hardload\Homework.txt</content><expected>Путь C:\Users\Roman\Documents\hardload\Homework.txt выбран</expected></step>
+<step>
+<index>3</index><content>Отметить файл с названием &quot;Пауза&quot; галочкой в &quot;Списке файлов&quot;, нажать кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс программы блокируется. Становится доступным для нажатия только &quot;Пауза&quot;.</expected></step>
+<step>
+<index>4</index><content>Проверить в папке C:\Users\Roman\Documents\hardload\Homework.txt что файл скопирован</content><expected>	
+Файл скопирован в C:\Users\Roman\Documents\hardload\Homework.txt</expected></step>
+<step>
+<index>5</index><content>Открыть файл и проверить что содержимое не изменилось</content><expected>	
+Содержимое файла не нарушено</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4795</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:56Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Добавить файл с помощью кнопки &quot;Найти и добавить файл в список&quot; с названием &quot;HomeWork&quot; из папки: C:\Users\Roman\Desktop\Homework.txt</content><expected>Файл &quot;Homework&quot; добавлен</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>	
+C помощью кнопки &quot;Выбрать папку, куда писать файлы&quot; выбрать папку, в которую копировать файл: C:\Users\Roman\Documents\hardload\Homework.txt</content><expected>Путь C:\Users\Roman\Documents\hardload\Homework.txt выбран</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Отметить файл с названием &quot;Пауза&quot; галочкой в &quot;Списке файлов&quot;, нажать кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс программы блокируется. Становится доступным для нажатия только &quot;Пауза&quot;.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Проверить в папке C:\Users\Roman\Documents\hardload\Homework.txt что файл скопирован</content><expected>	
+Файл скопирован в C:\Users\Roman\Documents\hardload\Homework.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Открыть файл и проверить что содержимое не изменилось</content><expected>	
+Содержимое файла не нарушено</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70254</id>
+				<title>Копирование файла PDF</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем папку отправления C:\Users\Roman\Desktop\homework1PDF
+В папке отправления создаем  файл .pdf размером 150 кб с названием hw.pdf
+Создать папку назначения - C:\Users\Roman\Documents\hardload</preconds>
+										<steps_separated><step>
+<index>1</index><content>Из папки C:\Users\Roman\Desktop\homework1PDF добавить в приложение 
+файл в формате .pdf, размером 150 кб, с помощью кнопки &quot;Найти и добавить файл в список&quot;</content><expected>В окне приложения в блоке &quot;Файлы&quot; будет отображаться имя и путь к файл у</expected></step>
+<step>
+<index>2</index><content>Добавить путь до папки назначения 
+с помощью кнопки &quot;Выбрать папку, куда писать файлы&quot;</content><expected>В окне приложения, в блоке &quot;to&quot; отображается путь до папки C:\Users\Roman\Documents\hardload</expected></step>
+<step>
+<index>3</index><content>Отметить флажок на файл в списке файлов</content><expected>В интерфейсе у выбранного файла отобразится галочка</expected></step>
+<step>
+<index>4</index><content>	
+Нажать на кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс программы блокируется. Становится доступным для нажатия только &quot;Пауза&quot;. Отметка в CheckBox пропадает</expected></step>
+<step>
+<index>5</index><content>Проверить в папке 
+что  файл добавлен и открываются.</content><expected>Файл добавлены в C:\Users\Roman\Documents\hardload и открывается без изменений.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4796</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:54Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Из папки C:\Users\Roman\Desktop\homework1PDF добавить в приложение 
+файл в формате .pdf, размером 150 кб, с помощью кнопки &quot;Найти и добавить файл в список&quot;</content><expected>В окне приложения в блоке &quot;Файлы&quot; будет отображаться имя и путь к файл у</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Добавить путь до папки назначения 
+с помощью кнопки &quot;Выбрать папку, куда писать файлы&quot;</content><expected>В окне приложения, в блоке &quot;to&quot; отображается путь до папки C:\Users\Roman\Documents\hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Отметить флажок на файл в списке файлов</content><expected>В интерфейсе у выбранного файла отобразится галочка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>	
+Нажать на кнопку &quot;Начать грузить&quot;</content><expected>Интерфейс программы блокируется. Становится доступным для нажатия только &quot;Пауза&quot;. Отметка в CheckBox пропадает</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Проверить в папке 
+что  файл добавлен и открываются.</content><expected>Файл добавлены в C:\Users\Roman\Documents\hardload и открывается без изменений.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70255</id>
+				<title>Проверка возможности паузы во время копирования</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл с расположением C:\Users\Roman\Рабочий стол\1.txt с текстом на 10kb.
+Копируем в папку C:\Users\Roman\Рабочий стол\Новая папка</preconds>
+										<steps_separated><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл с расположением C:\Users\Roman\Рабочий стол\1.txt
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл с расположением C:\Users\Roman\Рабочий стол\1.txt</expected></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол\Новая папка</content><expected>	
+-В интерфейсе программы отображается путь  C:\Users\Roman\Рабочий стол\Новая папка</expected></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галочкой</expected></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Загрузка файла приостановлена
+-Загрузка файла возобновлена</expected></step>
+<step>
+<index>5</index><content>5
+-Нажать кнопку &quot;пауза&quot;
+-Повторно нажать кнопку &quot;пауза&quot;</content><expected>-Загрузка файла приостановлена
+-Загрузка файла возобновлена</expected></step>
+<step>
+<index>6</index><content>-Открыть папку  C:\Users\Roman\Рабочий стол\Новая папка
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Roman\Рабочий стол\Новая папка находится файл 1.txt
+-Содержимое файла сохранено.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4797</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:51Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл с расположением C:\Users\Roman\Рабочий стол\1.txt
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл с расположением C:\Users\Roman\Рабочий стол\1.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол\Новая папка</content><expected>	
+-В интерфейсе программы отображается путь  C:\Users\Roman\Рабочий стол\Новая папка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галочкой</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Загрузка файла приостановлена
+-Загрузка файла возобновлена</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>5
+-Нажать кнопку &quot;пауза&quot;
+-Повторно нажать кнопку &quot;пауза&quot;</content><expected>-Загрузка файла приостановлена
+-Загрузка файла возобновлена</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>6</index><content>-Открыть папку  C:\Users\Roman\Рабочий стол\Новая папка
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке  C:\Users\Roman\Рабочий стол\Новая папка находится файл 1.txt
+-Содержимое файла сохранено.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70256</id>
+				<title>Копирование файла формата видео mp4</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл C:\Users\Roman\video123.mp4 с размером файла 22 МБ</preconds>
+										<steps_separated><step>
+<index>1</index><content>	
+Нажать на кнопку &quot;Найти и добавить файл в список&quot; в левом верхнем углу. Внизу в строке &quot;имя файла&quot; копируем и вставляем C:\Users\Roman\video123.mp4, нажимаем на файл ЛКМ что б выделить его, нажимаем на кнопку &quot;открыть&quot;</content><expected>В приложении отображается строчка C:\Users\Roman\video123.mp4</expected></step>
+<step>
+<index>2</index><content>Добавить папку для переноса файла с помощью кнопки в приложении &quot;выбрать папку, куда писать файл&quot; (кнопка находиться справа внизу). Выбираем папку по пути C:\Users\Roman\video</content><expected>В приложении в строчке to: отображается C:\Users\Roman\video</expected></step>
+<step>
+<index>3</index><content>Отметить файл чек боксом в приложении</content><expected>	
+в интерфейсе слева от выбранного файла будет отображаться галочка</expected></step>
+<step>
+<index>4</index><content>Нажимаем кнопку в приложении &quot;Начать грузить&quot;</content><expected>Блокируется интерфейс, кнопка &quot;пауза&quot; становиться доступна для нажатия, пропадает чек бокс</expected></step>
+<step>
+<index>5</index><content>Проверяем скопированный файл. Переходим в папку по пути:C:\Users\Roman\video. Проверяем скопировался ли файл video123.mp4, проверяем размер и видео ряд в сравнении с копируемым файлом</content><expected>файл video123.mp4 успешно скопирован</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4798</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:48Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>	
+Нажать на кнопку &quot;Найти и добавить файл в список&quot; в левом верхнем углу. Внизу в строке &quot;имя файла&quot; копируем и вставляем C:\Users\Roman\video123.mp4, нажимаем на файл ЛКМ что б выделить его, нажимаем на кнопку &quot;открыть&quot;</content><expected>В приложении отображается строчка C:\Users\Roman\video123.mp4</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Добавить папку для переноса файла с помощью кнопки в приложении &quot;выбрать папку, куда писать файл&quot; (кнопка находиться справа внизу). Выбираем папку по пути C:\Users\Roman\video</content><expected>В приложении в строчке to: отображается C:\Users\Roman\video</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Отметить файл чек боксом в приложении</content><expected>	
+в интерфейсе слева от выбранного файла будет отображаться галочка</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Нажимаем кнопку в приложении &quot;Начать грузить&quot;</content><expected>Блокируется интерфейс, кнопка &quot;пауза&quot; становиться доступна для нажатия, пропадает чек бокс</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Проверяем скопированный файл. Переходим в папку по пути:C:\Users\Roman\video. Проверяем скопировался ли файл video123.mp4, проверяем размер и видео ряд в сравнении с копируемым файлом</content><expected>файл video123.mp4 успешно скопирован</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70257</id>
+				<title>Копирование файла с флешки</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>			
+Создаем в расположении F:\ файл 1.txt с текстом на 1kb.
+Копируем в папку C:\Users\Roman\Рабочий стол</preconds>
+										<steps_separated><step>
+<index>1</index><content>	
+-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 1.txt в директории F:\
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл F:\1.txt</expected></step>
+<step>
+<index>2</index><content>	
+-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол</content><expected>	
+-В интерфейсе программы отображается путь C:\Users\Roman\Рабочий стол</expected></step>
+<step>
+<index>3</index><content>-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галкой</expected></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>	
+-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected></step>
+<step>
+<index>5</index><content>-Открыть папку C:\Users\Roman\Рабочий стол
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке C:\Users\Roman\Рабочий стол находится файл 1.txt
+-Содержимое файла сохранено.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4799</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:43Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>	
+-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 1.txt в директории F:\
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл F:\1.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>	
+-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол</content><expected>	
+-В интерфейсе программы отображается путь C:\Users\Roman\Рабочий стол</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галкой</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>	
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>	
+-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>-Открыть папку C:\Users\Roman\Рабочий стол
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке C:\Users\Roman\Рабочий стол находится файл 1.txt
+-Содержимое файла сохранено.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70258</id>
+				<title>Копирование файла на флешку</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+Создаем файл в директории C:\Users\Roman\Рабочий стол 123.txt с текстом на 1kb.
+Копируем в папку F:\1
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 123.txt в директории C:\Users\Roman\Рабочий стол
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Roman\Рабочий стол\123.txt</expected></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку F:\1</content><expected>-В интерфейсе программы отображается путь F:\1</expected></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галкой</expected></step>
+<step>
+<index>4</index><content>Нажать кнопку &quot;начать грузить&quot;</content><expected>	
+-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected></step>
+<step>
+<index>5</index><content>	
+-Открыть папку F:\1
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке F:\1 находится файл 123.txt
+-Содержимое файла сохранено.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4800</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:36Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Выбрать файл 123.txt в директории C:\Users\Roman\Рабочий стол
+-Нажать кнопку &quot;Открыть&quot; и добавить файл в список файлов</content><expected>-Открыто окно проводника
+-В окне приложения отображается файл C:\Users\Roman\Рабочий стол\123.txt</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку F:\1</content><expected>-В интерфейсе программы отображается путь F:\1</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>	
+-Отметить файл чекбоксом в приложении</content><expected>	
+-Чекбокс отмечен галкой</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Нажать кнопку &quot;начать грузить&quot;</content><expected>	
+-Блокируется интерфейс, кнопка &quot;пауза активна&quot;
+-Началась загрузка файла</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>	
+-Открыть папку F:\1
+-Проверить наличие скопированного файла
+-Проверить содержимое и целостность файла</content><expected>-В папке F:\1 находится файл 123.txt
+-Содержимое файла сохранено.</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T70259</id>
+				<title>Копирование файла,который не выбран</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создаем файл в директории C:\Users\Roman\Рабочий стол 123.txt с текстом на 1kb.
+Копируем в папку C:\Users\Roman\Рабочий стол\1
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Нажать кнопку &quot;отмена&quot;</content><expected>-Открыто окно проводника
+-Окно приложения пустое</expected></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол\1</content><expected>-В интерфейсе программы отображается путь C:\Users\Roman\Рабочий стол\1</expected></step>
+<step>
+<index>3</index><content>3
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Появляется ошибка о том, что загружаемый файл не был выбран</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4801</caseid>
+								<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-04-26T11:32:34Z</createdon>
+																		<createdby>solyanik_roman@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>-Нажать на кнопку &quot;найти и добавить файл в список&quot;
+-Нажать кнопку &quot;отмена&quot;</content><expected>-Открыто окно проводника
+-Окно приложения пустое</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>-Добавить папку для копирования с помощью кнопки &quot;Выбрать папку&quot; и выбрать папку C:\Users\Roman\Рабочий стол\1</content><expected>-В интерфейсе программы отображается путь C:\Users\Roman\Рабочий стол\1</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>3
+-Нажать кнопку &quot;начать грузить&quot;</content><expected>-Появляется ошибка о том, что загружаемый файл не был выбран</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Пашкова</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Николаенко</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Караван</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Бенедиктова</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Bragina</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Белоглазов</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Петкун (Автомат с напитками)</name>
+		<description></description>
+									</section>
+</sections>
+</run>
