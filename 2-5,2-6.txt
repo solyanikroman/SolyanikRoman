@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>My Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Jake.png">
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Визитка</h1>
+    </header>
+    <main>
+        <nav class="blog-navigation">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#video">Мое любимое видео на YouTube</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        </nav>
+	<section>
+	<h2 id="about" class="header_block">Роман Соляник</h2>
+	<p>
+	<div class="about_foto">
+	 <img class="avatar" src="SRR.jpg" width="300" alt="Its me">
+	</div>
+	<div class="about_text">
+        	Начинающий тестировщик из Томска
+	</div>
+	</p>
+	</section>
+        <article>
+	<h3 id="video">Мое любимое видео на YouTube</h2>
+	<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Q7PQt96VOgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</iframe>
+        </div>
+	</article>
+    </main>
+    <footer>
+      <h4 id="contact" class="contacts_header">Контакты</h3>
+		<div class="contacts"> 
+			<a target="_blank" href="mailto:solyanik_roman@mail.ru">
+        <img class="mail" src="mail.png" width=«110» height="110"></a>
+			<a target="_blank" href="https://github.com/solyanikroman"><img class="github" src="github.png" width=«110» height="110"></a>
+			<a target="_blank" href="https://t.me/rrmnnslnnk"><img class="telegram" src="telegram.png" width=«110» height="110"></a>
+		</div>
+   </footer>
+  </body>
+</html>
